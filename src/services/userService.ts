@@ -4,8 +4,8 @@ import { User, UserFormData } from '@/types/user';
 
 // Örnek veri
 let users: User[] = [
-  { id: 1, name: 'Ahmet Yılmaz', email: 'ahmet@example.com', phone: '555-1234', address: 'İstanbul' },
-  { id: 2, name: 'Mehmet Demir', email: 'mehmet@example.com', phone: '555-5678', address: 'Ankara' },
+  { id: 1, name: 'Abdullah Şahin', email: 'sahinabdullah2003@hotmail.com', phone: '05435562456', address: 'İstanbul' },
+  { id: 2, name: 'Berat Özbay', email: 'berat.ozbay@priviasecurity.com', phone: '123456789', address: 'Ataşehir' },
 ];
 
 export async function getAllUsers() {

@@ -108,7 +108,7 @@ export default function Home() {
       handleCloseDialog();
       await loadUsers();
     } catch (error) {
-      console.error('İşlem sırasında hata oluştu:', error);
+      console.error('Kullanıcı Girişinde Hata Oluştu', error);
     }
   };
 
