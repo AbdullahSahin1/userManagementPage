@@ -120,9 +120,13 @@ export default function Home() {
   const confirmDelete = async () => {
     try {
       if (userToDelete) {
-        await deleteUser(userToDelete.id);
-        setDeleteDialog(false);
-        await loadUsers();
+        const success = await deleteUser(userToDelete.id);
+        if (success) {
+          setDeleteDialog(false);
+          await loadUsers();
+        } else {
+          console.error('Kullanıcı silinemedi');
+        }
       }
     } catch (error) {
       console.error('Silme işlemi sırasında hata oluştu:', error);
