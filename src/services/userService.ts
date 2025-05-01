@@ -2,7 +2,7 @@
 
 import { User, UserFormData } from '@/types/user';
 
-// Örnek veri
+// Uygulama ilk yüklendiğinde ekranda hazır olarak gözükecek users
 let users: User[] = [
   { id: 1, name: 'Abdullah Şahin', email: 'sahinabdullah2003@hotmail.com', phone: '05435562456', address: 'İstanbul' },
   { id: 2, name: 'Berat Özbay', email: 'berat.ozbay@priviasecurity.com', phone: '123456789', address: 'Ataşehir' },
